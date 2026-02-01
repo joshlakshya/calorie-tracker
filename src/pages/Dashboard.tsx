@@ -7,7 +7,7 @@ import type { DailyStats } from '../types';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 export default function Dashboard() {
-    const [profile, setProfile] = useState(getUserProfile());
+    const profile = getUserProfile();
     const [todayStats, setTodayStats] = useState<DailyStats | null>(null);
     const [weeklyData, setWeeklyData] = useState<DailyStats[]>([]);
 
